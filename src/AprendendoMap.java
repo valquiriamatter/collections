@@ -10,11 +10,6 @@ public class AprendendoMap {
 
     public static void main(String[] args) {
 
-        // E o tipo pode ser: classes, wrappers ou tipos de coleção
-        // Type: é o tipo do objeto a ser usado, ou seja qual implementação
-
-        //Map<E> mapa = new Type();
-
         //Declarando de um Map
         Map<Integer, String> mapa = new HashMap();
 
@@ -64,12 +59,6 @@ public class AprendendoMap {
             System.out.println(i + " - " + mapa.get(i));
         }
 
-        System.out.println("");
-
-        //ver depois
-//        mapa.keySet().forEach(idade -> {
-//            System.out.println(pessoas.get(idade));
-//        });
 
     }
 

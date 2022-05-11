@@ -27,6 +27,18 @@ public class TestaCurso {
         javaColecoes.matricula(a2);
         javaColecoes.matricula(a3);
 
+        //Vendo se o aluno está matriculado
+        System.out.println("O aluno " + a1.getNome() + " está matriculado?");
+        System.out.println(javaColecoes.estaMatriculado(a1));
+
+        //Criando um novo objeto com o mesmo nome para testar o equals
+        Aluno a5 = new Aluno("Paula Maria", 34675);
+
+        //Após sobrescrever o equals definimos que dois alunos são iguais se possuem o mesmo nome, lembre-se
+        // sempre que se você sobrescrever o equals deve sobrescrever o hashcode quando estiver usando Set
+        System.out.println("O a1 é equals à Paula Maria?");
+        System.out.println(a1.equals(a5));
+
         System.out.println("Quem é o aluno com matricula 5617?");
         //Buscando por Matrícula
         Aluno aluno = javaColecoes.buscaMatriculado(5617);

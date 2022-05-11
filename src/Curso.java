@@ -73,6 +73,10 @@ public class Curso {
         this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
     }
 
+    public boolean estaMatriculado(Aluno aluno) {
+        return this.alunos.contains(aluno);
+    }
+
     @Override
     public String toString() {
         return "Curso{" +
